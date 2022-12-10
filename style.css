@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
+:root {
+    --lilac: #BCADE8;
+    --pink: #EAA2B3;
+    --green: #9BD9BB; 
+    --title-lilac: #887DA9;
+    --title-pink: #A47681;
+    --title-green: #74A18C;
+}
 
 * {
     margin: 0;
@@ -9,6 +17,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    background-color: #E6E6E6;
 }
 
 header, main {
@@ -89,6 +98,80 @@ div.cv a {
     height: 70px;
 }
 
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills .hardskills {
+    width: 50%;
+}
+
+.hardskills h3, .resume h3 {
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 20px;
+}
+
+.hardskills h5 {
+    font-size: 0.8rem;
+}
+
+.skills .hardskills ul {
+    margin: 20px 0 30px 0;
+    font-size: 0.8rem;
+    text-transform: none;
+}
+
+.hardskills p {
+    font-size: 0.6rem;
+    text-transform: none;
+    text-align: end;
+}
+
+.resume {
+    width: 90%;
+    margin-left: 10%;
+}
+
+.resume h5 {
+    text-align: center;
+}
+
+.resume h3 {
+    text-transform: lowercase;
+}
+
+.resume .front h5 {
+    color: var(--title-lilac);
+}
+
+.resume .back h5 {
+    color: var(--title-pink);
+}
+
+.resume .other h5 {
+    color: var(--title-green);
+}
 
 
+.resume .front, .resume .back, .resume .other {
+    margin: 30px 0 30px 0;
+}
 
+.resume p {
+    display: inline-block;
+    background-color: var(--lilac);
+    padding: 0.7rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    margin: 10px;
+}
+
+.resume .back p {
+    background-color: var(--pink);
+}
+
+.resume .other p {
+    background-color: var(--green);
+}

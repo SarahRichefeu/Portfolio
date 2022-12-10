@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+header, main {
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10vw;
+    text-decoration: none;
+    list-style: none;
+    margin: 20px 20px 0 0;
+    font-size: 0.85rem;
+}
+
+.about-me {
+    display: flex;
+}
+
+.about-me .description, .about-me .profile {
+    width: 50%;
+    margin: 5vw;
+}
+
+.about-me .profile h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.about-me .profile h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.about-me .profile h2:nth-child(2) {
+    position: relative;
+    left: 88px;
+    margin-top: -10px;
+}
+
+.about-me .profile .profil {
+    background-image: url('/media/profil.jpg');
+    width: 345px;
+    height: 345px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.about-me .description h3 {
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.about-me .description {
+    margin-top: 20vw;
+}
+
+.about-me .description p {
+    text-transform: none;
+    margin: 20px 0 30px 0;
+    text-align: justify;
+}
+
+div.cv a {
+    color: #000;
+    padding: 8px;
+}
+
+.cv-pic {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+

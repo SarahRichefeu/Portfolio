@@ -36,7 +36,7 @@ a {
     color: black;
 }
 
-nav {
+nav.classic-menu {
     position: fixed;
     top: 0px;
     right: 5px;
@@ -46,7 +46,7 @@ nav {
     margin-bottom: 20px;
 }
 
-nav ul {
+nav.classic-menu ul {
     display: flex;
     justify-content: flex-end;
     gap: 10vw;
@@ -56,8 +56,72 @@ nav ul {
     font-size: 0.85rem;
 }
 
-nav ul li a {
+nav.classic-menu ul li a {
     text-decoration: none;
+}
+
+.burger {
+    display: none;
+    appearance: none;
+    background: none;
+    outline: none; 
+    border: none;
+    position: fixed;
+    z-index: 100;
+    right: 10px;
+}
+
+.burger .bar, .burger:after, .burger:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(56, 56, 56);
+    margin: 5px 0;
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+
+.burger.active:before {
+    transform: rotate(-45deg) translate(-8px, 4px);
+}
+
+.burger.active:after {
+    transform: rotate(45deg) translate(-8px, -3px);
+}
+
+.burger.active .bar {
+    opacity: 0;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F6F6F6;
+    display: block;
+    z-index: 98;
+    padding-top: 120px;
+    transition: all 0.4s ease-in;
+}
+
+.mobile-menu ul {
+    list-style: none;
+}
+
+.mobile-menu.active {
+    left: 0;
+    transition: all 0.4s ease-in;
+}
+
+.mobile-menu a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    padding: 15px;
 }
 
 .about-me {
@@ -92,6 +156,7 @@ nav ul li a {
 
 .about-me .profile .profil {
     background-image: url('/media/profil.jpg');
+    background-size: cover;
     width: 345px;
     height: 345px;
     border-radius: 50%;
@@ -131,7 +196,8 @@ div.fancy-cv a {
 }
 
 .skills .hardskills {
-    width: 50%;
+    width: 60%;
+    margin-left: 3%;
 }
 
 h3 {
@@ -142,6 +208,10 @@ h3 {
 
 .hardskills h5 {
     font-size: 0.8rem;
+}
+
+.hardskills .highlight {
+    font-weight: 600;
 }
 
 .skills .hardskills ul {
@@ -273,10 +343,9 @@ h3 {
 }
 
 .contact {
-    text-align: justify;
-    width: 40%;
+    width: 60%;
     margin: 5% auto 10% auto;
-    padding: 5%;
+    padding: 12%;
     background-image: url("/media/contact-1.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -302,3 +371,77 @@ h3 {
     height: 30px;
     margin-right: 10px;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+    nav.classic-menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+
+    .about-me {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .about-me .profile {
+        padding-top: 20%;
+    }
+
+    .about-me .description, .about-me .profile {
+        width: 100%;
+        margin: 5vw;
+        text-align: center;
+    }
+
+    .about-me .profile h2:nth-child(2) {
+        left: 0px;
+    }
+
+    .about-me .profile .profil {
+        width: 300px;
+        height: 300px;
+        margin: 20px auto;
+        background-position: center;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .skills .hardskills {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .resume {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .card {
+        margin: 60px auto;
+    }
+
+    .cb-img, .br-img, .dg-img, .fg-img {
+        width: 100%;
+    }
+
+    .card-body {
+        width: 100%;
+    }
+    .contact {
+        width: 90%;
+    }
+}
+

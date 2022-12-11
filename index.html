@@ -10,7 +10,21 @@
 </head>
 <body>
     <header>
-        <nav>
+        <!--Classic menu-->
+        <nav role="navigation" class="classic-menu">
+            <ul>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button class="burger">
+            <div class="bar"></div>
+        </button>
+
+        <nav role="navigation" class="mobile-menu">
             <ul>
                 <li><a href="#about">A propos</a></li>
                 <li><a href="#skills">Compétences</a></li>
@@ -32,11 +46,12 @@
             <div class="description">
                 <h3>A propos de moi</h3>
                 <p>Après avoir décidé en 2020 de me réorienter, j’ai découvert par hasard les  
-                    métiers du web et du digital. Après avoir réalisé des recherches sur ces 
-                    différents métiers, j'ai découvert un attrait pour le développement web. 
+                    métiers du web et du digital. Un nouveau monde s'est ouvert à moi et j'ai 
+                    passé de nombreux mois à me renseigner sur différents métiers appartenant 
+                    à ce domaine. J'ai découvert un attrait pour le développement web. 
                     Je me suis retrouvée dans ce métier polyvalent, qui allie a la fois 
                     reflexion, créativité, technologie et art. J'ai commencé par me former 
-                    en autodidacte, puis j'ai suivi une formation professionnalisante.
+                    en autodidacte en HTML et CSS, puis j'ai décidé de suivre une formation professionnalisante.
                     Je souhaite aujourd’hui poursuivre mes études et devenir une experte 
                     du developpement web. </p>
                 <div class="fancy-cv"><img src="/media/fancy-cv.png" alt="" class="fancy-cv-pic"><a href="/media/A4.pdf" target="_blank">Téléchargez mon curriculum vitae</a></div>
@@ -192,5 +207,7 @@
             </section>
         </footer>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>

@@ -12,21 +12,21 @@
     <header>
         <nav>
             <ul>
-                <li>A propos</li>
-                <li>Compétences</li>
-                <li>Projets</li>
-                <li>Contact</li>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="about-me">
+        <section class="about-me" id="about">
             <div class="profile">
                 <h2>Sarah</h2>
                 <h2>Richefeu</h2>
                 <div class="profil"></div>
-                <h3>Développeuse Web</h3>
+                <h3>Développeuse Front-End</h3>
             </div>
 
             <div class="description">
@@ -39,11 +39,11 @@
                     en autodidacte, puis j'ai suivi une formation professionnalisante.
                     Je souhaite aujourd’hui poursuivre mes études et devenir une experte 
                     du developpement web. </p>
-                <div class="cv"><img src="/media/fancy-cv.png" alt="" class="cv-pic"><a href="/media/A4 - 1.pdf" target="_blank">Téléchargez mon curriculum vitae</a></div>
+                <div class="fancy-cv"><img src="/media/fancy-cv.png" alt="" class="fancy-cv-pic"><a href="/media/A4.pdf" target="_blank">Téléchargez mon curriculum vitae</a></div>
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="hardskills">
                 <h3>Compétences</h3>
                 <div class="front-end">
@@ -79,28 +79,118 @@
                 <h3>donc...</h3>
                 <div class="front">
                     <h5>Front-End</h5>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Bootstrap</p>
-                    <p>Javascript</p>
-                    <p>React.js</p>
-                    <p>Adobe XD</p>
-                    <p>Figma</p>
-                    <p>Wordpress</p>
+                    <p class="display">HTML</p>
+                    <p class="display">CSS</p>
+                    <p class="display">Bootstrap</p>
+                    <p class="display">Javascript</p>
+                    <p class="display">React.js</p>
+                    <p class="display">Adobe XD</p>
+                    <p class="display">Figma</p>
+                    <p class="display">Wordpress</p>
                 </div>
                 <div class="back">
                     <h5>Back-End</h5>
-                    <p>MySQL</p>
-                    <p>PHP</p>
+                    <p class="display pink">MySQL</p>
+                    <p class="display pink">PHP</p>
                 </div>
                 <div class="other">
                     <h5>Autres</h5>
-                    <p>Trello</p>
-                    <p>Agile</p>
-                    <p>GitHub</p>
+                    <p class="display green">Trello</p>
+                    <p class="display green">Agile</p>
+                    <p class="display green">GitHub</p>
                 </div>
             </div>
         </section>
+
+        <section id="projects">
+            <h3>Mes projets</h3>
+            <div class="cards">
+                <div class="card">
+                    <div class="br-img"></div>
+                    <div class="card-head">
+                        <h5>Bordeaux Rose</h5>
+                        <p class="display">HTML</p>
+                        <p class="display">CSS</p>
+                        <p class="display">Bootstrap</p>
+                        <p class="display green">Trello</p>
+                        <p class="display green">GitHub</p>
+                    </div>
+                    <div class="card-body">
+                    <a href="https://sarahrichefeu.github.io/BordeauxRose.github.io/#" target="_blank">Lien du site</a>
+                    <p>Site vitrine d’une association fictive de lutte contre le cancer du sein, réalisée dans le cadre d’une évaluation d’entraînement.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="dg-img"></div>
+                    <div class="card-head">
+                        <h5>Dice Game</h5>
+                        <p class="display">HTML</p>
+                        <p class="display">CSS</p>
+                        <p class="display">JavaScript</p>
+                        <p class="display green">Trello</p>
+                        <p class="display green">GitHub</p>
+                    </div>
+                    <div class="card-body">
+                    <a href="https://sarahrichefeu.github.io/DiceGame/" target="_blank">Lien du site</a>
+                    <p>Jeu de dés pour deux joueurs. Chaque joueur à la possibilité de lancer les dés et de sauvegarder leurs points. Le premier qui atteint 100 points a gagné. </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="fg-img"></div>
+                    <div class="card-head">
+                        <h5>Fly and go</h5>
+                        <p class="display green">Trello</p>
+                        <p class="display">Figma</p>
+                        <p class="display">Wordpress</p>
+                    </div>
+                    <div class="card-body">
+                    <a href="#" style="pointer-events: none; color: #AAA">Lien du site</a>
+                    <p>Site vitrine d’une agence de voyage fictive, Fly And Go, réalisée sur Wordpress.</p>
+                    </div>
+                </div>
+
+                <div class="card ">
+                    <div class="cb-img"></div>
+                    <div class="card-head">
+                        <h5>Clipboard</h5>
+                        <p class="display">Adobe XD</p>
+                        <p class="display green">Trello</p>
+                    </div>
+                    <div class="card-body">
+                    <a href="https://drive.google.com/drive/folders/1jqDBxJrv27H2xOYcG2g4UQ2ye9hL4_x-?usp=sharing" target="_blank" class="card-link">Lien du drive</a>
+                    <p class="card-text text-lowercase">Maquettes réalisées lors d’une evaluation d’entraînement, en respectant le cahier des charges fourni.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <section class="contact" id="contact">
+                <h3>Me contacter</h3>
+                <div class="location">
+                    <img src="/media/espace-reserve.png" alt="">
+                    <p>Bordeaux, 33300</p>
+                </div>
+                <div class="mail">
+                    <img src="/media/e-mail.png" alt="">
+                    <p>sarah.richefeu@hotmail.fr</p>
+                </div>
+                <div class="tel">
+                    <img src="/media/telephone-cellulaire.png" alt="">
+                    <p>06 33 72 10 51</p>
+                </div>
+                <div class="cv">
+                    <img src="/media/cv.png" alt="">
+                    <p><a href="/media/A4.pdf" target="_blank">Mon CV en PDF</a></p>
+                </div>
+                <div class="linkedin">
+                    <img src="/media/linkedin.png" alt="">
+                    <p><a href="https://www.linkedin.com/in/sarah-richefeu-075a6b202/" target="_blank">Linkedin</a></p>
+                </div>
+            </section>
+        </footer>
     </main>
 </body>
 </html>

@@ -8,6 +8,13 @@
     --title-green: #74A18C;
 }
 
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +24,26 @@
 body {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    background-color: #E6E6E6;
+    background-color: #F6F6F6;
 }
 
 header, main {
     width: 90%;
     margin: auto;
+}
+
+a {
+    color: black;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    right: 5px;
+    background-color: #F6F6F6;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 nav ul {
@@ -35,8 +56,13 @@ nav ul {
     font-size: 0.85rem;
 }
 
+nav ul li a {
+    text-decoration: none;
+}
+
 .about-me {
     display: flex;
+    margin-top: 5%;
 }
 
 .about-me .description, .about-me .profile {
@@ -88,12 +114,12 @@ nav ul {
     text-align: justify;
 }
 
-div.cv a {
+div.fancy-cv a {
     color: #000;
     padding: 8px;
 }
 
-.cv-pic {
+.fancy-cv-pic {
     width: 70px;
     height: 70px;
 }
@@ -101,16 +127,17 @@ div.cv a {
 .skills {
     display: flex;
     justify-content: space-between;
+    padding-top: 5%;
 }
 
 .skills .hardskills {
     width: 50%;
 }
 
-.hardskills h3, .resume h3 {
+h3 {
     text-align: center;
     letter-spacing: 5px;
-    margin: 20px;
+    margin: 40px;
 }
 
 .hardskills h5 {
@@ -159,7 +186,7 @@ div.cv a {
     margin: 30px 0 30px 0;
 }
 
-.resume p {
+.display {
     display: inline-block;
     background-color: var(--lilac);
     padding: 0.7rem;
@@ -168,10 +195,110 @@ div.cv a {
     margin: 10px;
 }
 
-.resume .back p {
+.pink {
     background-color: var(--pink);
 }
 
-.resume .other p {
+.green {
     background-color: var(--green);
+}
+
+#projects {
+    padding-top: 5%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem 0 2rem 0;
+}
+
+.card {
+    margin-top: 2vh;
+}
+
+.card-head {
+    padding: 0.3rem;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card-body {
+    text-align: center;
+    width: 90%;
+}
+
+.card-body p {
+    margin-top: 10px;
+    text-transform: none;
+    font-size: 0.9rem;
+}
+
+.br-img {
+    background-image: url(/media/bordeauxrose.png);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.dg-img {
+    background-image: url(/media/dicegame.png);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.fg-img {
+    background-image: url(/media/flyandgo.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.cb-img {
+    background-image: url(/media/clipboard.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    text-align: justify;
+    width: 40%;
+    margin: 5% auto 10% auto;
+    padding: 5%;
+    background-image: url("/media/contact-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact div {
+    margin: 30px 0;
+    font-size: 0.8rem;
+}
+
+.linkedin a {
+    text-decoration: none;
+}
+
+.contact .location, .contact .mail, .contact .tel, .contact .cv, .contact .linkedin {
+    display: flex;
+    align-items: center;
+}
+
+.contact .location img, .contact .mail img, .contact .tel img, .contact .cv img, .contact .linkedin img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }

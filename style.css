@@ -279,6 +279,7 @@ h3 {
 
 .cards {
     display: grid;
+    gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     margin: 2rem 0 2rem 0;
 }
@@ -295,7 +296,6 @@ h3 {
 
 .card-body {
     text-align: center;
-    width: 90%;
 }
 
 .card-body p {
@@ -304,22 +304,21 @@ h3 {
     font-size: 0.9rem;
 }
 
+.img {
+    height: 350px;
+    margin-bottom: 20px;
+}
+
 .br-img {
     background-image: url('./media/bordeauxrose.png');
     background-size: cover;
     background-position: center;
-    width: 90%;
-    height: 350px;
-    margin-bottom: 20px;
 }
 
 .dg-img {
     background-image: url('./media/dicegame.png');
     background-size: cover;
     background-position: center;
-    width: 90%;
-    height: 350px;
-    margin-bottom: 20px;
 }
 
 .fg-img {
@@ -327,9 +326,6 @@ h3 {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-    width: 90%;
-    height: 350px;
-    margin-bottom: 20px;
 }
 
 .cb-img {
@@ -337,9 +333,13 @@ h3 {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-    width: 90%;
-    height: 350px;
-    margin-bottom: 20px;
+}
+
+.sc-img {
+    background-image: url('./media/spyandcie.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: fit-content;
 }
 
 .contact {

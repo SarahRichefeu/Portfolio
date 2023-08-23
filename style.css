@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
 :root {
+    --bg-color: #F6F6F6;
     --lilac: #BCADE8;
     --pink: #EAA2B3;
     --green: #9BD9BB; 
@@ -24,7 +25,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    background-color: #F6F6F6;
+    background-color: var(--bg-color);
 }
 
 header, main {
@@ -40,7 +41,7 @@ nav.classic-menu {
     position: fixed;
     top: 0px;
     right: 5px;
-    background-color: #F6F6F6;
+    background-color: var(--bg-color);
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -100,7 +101,7 @@ nav.classic-menu ul li a {
     left: 100%;
     width: 100%;
     min-height: 100vh;
-    background-color: #F6F6F6;
+    background-color: var(--bg-color);
     display: block;
     z-index: 98;
     padding-top: 120px;

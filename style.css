@@ -344,6 +344,13 @@ h3 {
     background-position: fit-content;
 }
 
+.pg-img {
+    background-image: url('./media/parrotgarage.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .contact {
     width: 60%;
     margin: 5% auto 10% auto;

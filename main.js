@@ -13,7 +13,3 @@ burgerBtn.addEventListener('click', () => {
         });
     });
 });
-
-
-
-console.log(navLinks);

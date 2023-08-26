@@ -37,6 +37,8 @@ a {
     color: black;
 }
 
+/* Navbar */
+
 nav.classic-menu {
     position: fixed;
     top: 0px;
@@ -60,6 +62,8 @@ nav.classic-menu ul {
 nav.classic-menu ul li a {
     text-decoration: none;
 }
+
+/* Burger Menu */
 
 .burger {
     display: none;
@@ -124,6 +128,8 @@ nav.classic-menu ul li a {
     margin: 10px;
     padding: 15px;
 }
+
+/* About me section */
 
 .about-me {
     display: flex;
@@ -190,6 +196,8 @@ div.fancy-cv a {
     width: 70px;
     height: 70px;
 }
+
+/* Skills section */
 
 .skills {
     display: flex;
@@ -258,6 +266,8 @@ h3 {
     margin: 30px 0 30px 0;
 }
 
+/* Skills section - buttons */
+
 .display {
     display: inline-block;
     background-color: var(--lilac);
@@ -274,6 +284,8 @@ h3 {
 .green {
     background-color: var(--green);
 }
+
+/* Projects section */
 
 #projects {
     padding-top: 5%;
@@ -305,6 +317,8 @@ h3 {
     text-transform: none;
     font-size: 0.9rem;
 }
+
+/* Project section - images */
 
 .img {
     height: 350px;
@@ -351,6 +365,8 @@ h3 {
     background-position: center;
 }
 
+/* Contact */
+
 .contact {
     width: 60%;
     margin: 5% auto 10% auto;
@@ -383,7 +399,7 @@ h3 {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 900px) {
     nav.classic-menu {
         display: none;
     }
@@ -442,7 +458,7 @@ h3 {
         margin: 60px auto;
     }
 
-    .cb-img, .br-img, .dg-img, .fg-img {
+    .cb-img, .br-img, .dg-img, .fg-img, .cb-img, .sc-img, .pg-img {
         width: 100%;
     }
 
